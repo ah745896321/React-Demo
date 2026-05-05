@@ -3,6 +3,11 @@ import { Toaster } from '@/components/ui/sonner'
 import PrivateRoute from '@/components/PrivateRoute'
 import Layout from '@/components/Layout'
 import Login from '@/pages/Login'
+import UserPage from '@/pages/User'
+import XpRolePage from '@/pages/XpRole'
+import XpProgPage from '@/pages/XpProg'
+import TypePage from '@/pages/Type'
+import ParamPage from '@/pages/Param'
 
 export default function App() {
   return (
@@ -13,11 +18,11 @@ export default function App() {
         <Route element={<PrivateRoute />}>
           <Route element={<Layout />}>
             <Route path="/" element={<Navigate to="/user" replace />} />
-            <Route path="/user" element={<div>人事資料（建置中）</div>} />
-            <Route path="/role" element={<div>角色設定（建置中）</div>} />
-            <Route path="/prog" element={<div>頁面維護（建置中）</div>} />
-            <Route path="/type" element={<div>代碼維護（建置中）</div>} />
-            <Route path="/param" element={<div>下拉選單（建置中）</div>} />
+            <Route path="/user" element={<UserPage />} />
+            <Route path="/role" element={<XpRolePage />} />
+            <Route path="/prog" element={<XpProgPage />} />
+            <Route path="/type" element={<TypePage />} />
+            <Route path="/param" element={<ParamPage />} />
           </Route>
         </Route>
       </Routes>
