@@ -36,25 +36,23 @@ public class ProgDto
 {
     public string ProgId { get; set; } = "";
     public string ProgName { get; set; } = "";
+    public string ProgNote { get; set; } = "";
     public string ProgUrl { get; set; } = "";
-    public int Sort { get; set; }
-    public string Icon { get; set; } = "";
-    public string ParentId { get; set; } = "";
+    public string ProgIcon { get; set; } = "";
 }
 
 public class TypeDto
 {
     public string TypeId { get; set; } = "";
     public string TypeName { get; set; } = "";
-    public string Note { get; set; } = "";
+    public string TypeNote { get; set; } = "";
 }
 
 public class ParamDto
 {
     public string ParamId { get; set; } = "";
-    public string ParamClass { get; set; } = "";
-    public string ParamNo { get; set; } = "";
+    public string TypeId { get; set; } = "";
     public string ParamName { get; set; } = "";
-    public string Color { get; set; } = "";
-    public int Sort { get; set; }
+    public string ParamValue { get; set; } = "";
+    public int SortNo { get; set; }
 }
